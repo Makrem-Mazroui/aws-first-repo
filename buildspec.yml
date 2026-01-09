@@ -5,10 +5,10 @@ phases:
       dotnet: 8.0
   build:
     commands:
-      - dotnet publish -c Release --self-contained false -o bin/Release/net8.0/linux-x64
+      - dotnet publish -c Release --self-contained=false --runtime linux-x64
 artifacts:
   files:
-    - scripts/**/*
+    - scripts/*
     - appspec.yml
-    - bin/Release/net8.0/linux-x64/**/*
-  discard-paths: no
+    - bin/Release/net8.0/linux-x64/*
+  discard-paths: yes
