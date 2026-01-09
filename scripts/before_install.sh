@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Nothing to install"
+echo "No before install"
