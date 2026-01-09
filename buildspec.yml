@@ -1,4 +1,4 @@
-version: 0
+version: 0.2
 phases:
   install:
     runtime-versions:
@@ -10,5 +10,5 @@ artifacts:
   files:
     - scripts/*
     - appspec.yml
-    - bin/Release/netcoreapp6/linux-x64/*
+    - bin/Release/net8.0/linux-x64/*
   discard-paths: yes
